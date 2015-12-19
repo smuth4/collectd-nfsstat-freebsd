@@ -25,4 +25,4 @@ LoadPlugin exec
 
 ## Notes
 
-Regarding the datatype, having ``derive`` as the datatype is ugly if it gets exported somewhere else, but I use Graphite rules to strip it out. To change it natively in collectd, edit your types.db to have a custom entry, and change the `CLIENT_DATATYPE` and `SERVER_DATATYPE` to use that entry.
+Regarding the datatype, having `gauge` as the datatype is ugly if it gets exported somewhere else, but I use Graphite rules to strip it out. To change it natively in collectd, edit your types.db to have a custom entry, and change the `CLIENT_DATATYPE` and `SERVER_DATATYPE` to use that entry.

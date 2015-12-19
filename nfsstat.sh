@@ -5,8 +5,8 @@ INTERVAL="${COLLECTD_INTERVAL:-10}"
 # Local settings
 CLIENT_STATS=true
 SERVER_STATS=true
-CLIENT_DATATYPE='derive'
-SERVER_DATATYPE='derive'
+CLIENT_DATATYPE='gauge'
+SERVER_DATATYPE='gauge'
 
 while sleep "$INTERVAL"; do
   if [ $SERVER_STATS = true ]; then
