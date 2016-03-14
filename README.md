@@ -15,11 +15,11 @@ sudo cp nfsstash.sh /usr/local/etc/collectd.d/ && sudo chmod +x /usr/local/etc/c
 ## Configuration
 Edit the script and adjust the default `INTERVAL`, or change `CLIENT_STATS` or `SERVER_STATS` to `false` to gather only client or only server stats respectively.
 
-Configure collectd to use the new script. Somewhere in the configuration file, add the following:
+Somewhere in collectd's configuration file, add the following:
 ```
 LoadPlugin exec
 <Plugin exec>
-	Exec nobody "/usr/local/etc/collectd.d/nfsstat.sh"
+   Exec nobody "/usr/local/etc/collectd.d/nfsstat.sh"
 </Plugin>
 ```
 
