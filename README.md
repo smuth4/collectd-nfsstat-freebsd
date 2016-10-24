@@ -6,9 +6,9 @@ This uses the `-e` flag to gather stats, and has not been tested against NFS v3.
 ## Installation
 
 ```bash
-https://github.com/smuth4/collectd-nfsstat-freebsd
+git clone https://github.com/smuth4/collectd-nfsstat-freebsd
 cd collectd-nfsstat-freebsd
-sudo mkdir /usr/local/etc/collectd.d/
+sudo mkdir -p /usr/local/etc/collectd.d/
 sudo cp nfsstash.sh /usr/local/etc/collectd.d/ && sudo chmod +x /usr/local/etc/collectd.d/nfsstash.sh
 ```
 
